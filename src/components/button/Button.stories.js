@@ -1,8 +1,8 @@
-import HelloWorld from "./HelloWorld.vue";
+import Button from "./Button.vue";
 
 export default{
-    title: 'example/Hello',
-    component: HelloWorld,
+    title: 'Button',
+    component: Button,
     argType:{
         backgroundColor: { control: 'green' }
     }    
@@ -10,8 +10,8 @@ export default{
 
 const Template = (arg, { argTypes }) => ({
     props: Object.keys(argTypes),
-    components: {HelloWorld},
-    template: '<HelloWord v-bind="$prop" />'
+    components: { Button },
+    template: '<Button v-bind="$prop" />'
 });
 export const ByDefault = Template.bind({});
-ByDefault.args={ msg: "holamundo" };
+ByDefault.args={  };
